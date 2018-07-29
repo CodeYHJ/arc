@@ -24,7 +24,7 @@
                     <h2>{{ value.title }}</h2>
                     <p>{{ new Date(value.lastUpdated).toLocaleDateString($lang) }}</p>
                 </a>
-                <p v-html="value.excerpt"></p>
+                <div v-html="value.excerpt"></div>
                 <ul class="actions" v-if="value.excerpt">
                     <li>
                         <a class="button" :href="value.path + '#more'">Read More</a>
