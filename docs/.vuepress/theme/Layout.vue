@@ -31,13 +31,14 @@ export default {
     Vue.prototype['$categories'] = classified.categories
     Vue.prototype['$currentPages'] = classified.currentPages
   },
+  mounted: function() {
+    if(window.innerWidth > 737) 
+      this.navPanelVisible = !this.isHome
+  },
   components: { Header, Home, Page, Sidebar, Footer },
   computed: {
     isHome: function() {
-      let isHome = Utils.isHomePath(this.$page.path)
-      if(window.innerWidth > 737) 
-        this.navPanelVisible = !isHome
-      return isHome
+      return Utils.isHomePath(this.$page.path)
     }
   },
   methods: {
