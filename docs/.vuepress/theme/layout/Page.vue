@@ -7,13 +7,9 @@
         <p>{{ $page.frontmatter.category }}</p>
       </header>
 
-      <div class="row 150%">
-        <div class="8u$ 12u$(medium) important(medium)">
-            <section id="content">
-                <Content/>
-            </section>
-        </div>
-      </div>
+      <section id="content">
+          <Content/>
+      </section>
 
       <footer class="article-footer">
         <!-- <% if (!index){ %>
