@@ -35,7 +35,8 @@ export default {
   computed: {
     isHome: function() {
       let isHome = Utils.isHomePath(this.$page.path)
-      this.navPanelVisible = !isHome
+      if(window.innerWidth > 737) 
+        this.navPanelVisible = !isHome
       return isHome
     }
   },
