@@ -24,6 +24,7 @@ export default {
     mounted: function () {
       let v = this
       var disqus_config = function () {
+        this.language = v.$lang;
         this.page.url = v.$page.path;
         this.page.identifier = v.$page.key;
       };
