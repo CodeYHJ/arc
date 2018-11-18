@@ -1499,6 +1499,9 @@
 			height: 3em;
 			line-height: 3em;
 			text-decoration: none;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
 
 			&:hover {
 				color: inherit !important;
